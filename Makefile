@@ -6,7 +6,7 @@
 
 
 # the upstream project
-OBS_PROJECT := EA4-experimental
+OBS_PROJECT := EA4
 
 # the package name in OBS
 OBS_PACKAGE := EA4-experimental
