@@ -1,6 +1,6 @@
 Name: cpanel-ea4-experimental-release
 Version: 0.1
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Access the EA4-experimental repository
 
 Group: Development/Tools
@@ -24,6 +24,9 @@ rm -rf %{buildroot}
 %{_sysconfdir}/yum.repos.d/EA4-experimental.repo
 
 %changelog
+* Thu Oct 22 2015 Darren Mobley <darren@cpanel.net> - 0.1-3
+- Finalized path for mirrorlist in .repo file
+
 * Fri Oct 16 2015 Darren Mobley <darren@cpanel.net> - 0.1-2
 - Renaming release packages due to conflicts in ea- namespace
 
