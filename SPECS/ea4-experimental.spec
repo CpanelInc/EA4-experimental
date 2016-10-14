@@ -1,7 +1,9 @@
-Name: cpanel-ea4-experimental-release
+Name: ea4-experimental
 Version: 0.1
-Release: 3%{?dist}
-Summary: Access the EA4-experimental repository
+# Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4600 for more details
+%define release_prefix 6
+Release: %{release_prefix}%{?dist}.cpanel
+Summary: Access the EA4 experimental repository
 
 Group: Development/Tools
 License: BSD 2-Clause
@@ -24,6 +26,12 @@ rm -rf %{buildroot}
 %{_sysconfdir}/yum.repos.d/EA4-experimental.repo
 
 %changelog
+* Tue Oct 11 2016 Dan Muey <dan@cpanel.net> - 0.1-6
+- EA-5244: Change package name to match github for clarity
+
+* Mon Jun 20 2016 Dan Muey <dan@cpanel.net> - 0.1-5
+- EA-4383: Update Release value to OBS-proof versioning
+
 * Thu Oct 22 2015 Darren Mobley <darren@cpanel.net> - 0.1-3
 - Finalized path for mirrorlist in .repo file
 
