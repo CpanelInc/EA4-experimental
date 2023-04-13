@@ -1,7 +1,7 @@
 Name: ea4-experimental
 Version: 0.1
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4600 for more details
-%define release_prefix 7
+%define release_prefix 8
 Release: %{release_prefix}%{?dist}.cpanel
 Summary: Access the EA4 experimental repository
 
@@ -26,6 +26,9 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/yum.repos.d/EA4-experimental.repo
 
 %changelog
+* Thu Apr 13 2023 Dan Muey <dan@cpanel.net> - 0.1-8
+- ZC-10895: make `From repo` have OS info akin to `APT-Sources`
+
 * Sat Oct 28 2017 Cory McIntire <cory@cpanel.net> - 0.1-7
 - EA-6890: set the repo file as a config file
  
