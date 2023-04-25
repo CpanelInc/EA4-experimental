@@ -1,5 +1,5 @@
-[EA4-experimental]
-name=EA4 Experimental ( EasyApache 4 )
+[EA4-experimental-c$releasever]
+name=EA4 Experimental ( EasyApache 4 - c$releasever )
 mirrorlist=http://httpupdate.cpanel.net/ea4-experimental-c$releasever-$basearch-mirrorlist
 gpgcheck=1
 gpgkey=https://securedownloads.cpanel.net/cPanelPublicRPMKey.asc
